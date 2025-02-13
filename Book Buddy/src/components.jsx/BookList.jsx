@@ -1,11 +1,11 @@
-import { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 
 const BookCatalog = () => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    fetch('fsa-book-buddy-b6e748d1380d.herokuapp.com')
+    fetch('https://fsa-book-buddy-b6e748d1380d.herokuapp.com/api/books')
       .then((res) => res.json())
       .then((data) => setBooks(data));
   }, []);
@@ -22,6 +22,6 @@ const BookCatalog = () => {
       </ul>
     </div>
   );
-};
+}
 
 export default BookCatalog;
