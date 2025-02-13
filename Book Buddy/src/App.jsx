@@ -1,6 +1,6 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { useState, useEffect } from 'react';
-import BooksList from '.'
+import BooksList from '.https://fsa-book-buddy-b6e748d1380d.herokuapp.com/docs/#-get-api-books-'
 
 
 const App = () => {
@@ -18,11 +18,12 @@ const App = () => {
   
   );
 };
+
 const BookCatalog = () => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    fetch('https://api.example.com/books')
+    fetch('https://fsa-book-buddy-b6e748d1380d.herokuapp.com/docs/#-get-api-books-')
       .then((res) => res.json())
       .then((data) => setBooks(data));
   }, []);
