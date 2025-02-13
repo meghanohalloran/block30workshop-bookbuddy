@@ -5,7 +5,7 @@ const BookCatalog = () => {
   const [books, setBooks] = useState([]);
 
   useEffect(() => {
-    fetch('https://api.example.com/books')
+    fetch('fsa-book-buddy-b6e748d1380d.herokuapp.com')
       .then((res) => res.json())
       .then((data) => setBooks(data));
   }, []);
